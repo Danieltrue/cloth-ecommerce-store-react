@@ -5,8 +5,8 @@ import "./directory.style.scss";
 import Menuitem from "../menu-item/menu-item.components";
 
 class Directory extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       sections: [
         {
@@ -53,6 +53,7 @@ class Directory extends React.Component {
             title={section.title}
             imageUrl={section.imageUrl}
             size={section.size}
+            linkUrl={section.linkUrl}
           />
         ))}
       </div>
